@@ -1,6 +1,6 @@
 # Kafka producer
 
-This is a simple Kafka producer, that sends notifications to the `'notifications.send-notification'` topic. It was created to test brantac/notifications-service .
+This is a simple Kafka producer, that sends notifications to the `'notifications.send-notification'` topic. It was created to test [brantac/notifications-service](https://github.com/brantac/notifications-service).
 
 ## Packages installed
 - kafkajs
