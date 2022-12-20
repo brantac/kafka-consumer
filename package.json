@@ -1,5 +1,6 @@
 {
   "name": "kafka-producer",
+  "type": "module",
   "version": "1.0.0",
   "description": "A simple kafka producer for learning purposes",
   "main": "producer.js",
