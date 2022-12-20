@@ -4,11 +4,11 @@ import { randomUUID } from 'node:crypto'
 async function bootstrap() {
     const kafka = new Kafka({
         clientId: 'test-producer',
-        brokers: ['ideal-troll-12921-us1-kafka.upstash.io:9092'],
+        brokers: [process.env.KAFKA_BROKERS],
         sasl: {
           mechanism: 'scram-sha-256',
-          username: 'aWRlYWwtdHJvbGwtMTI5MjEkgB4l1GAP7JlkuQEpCdCjnU3T1vY3i87U96Q-rxc',
-          password: 'Xm7xxEAjwAtqVqvTqE8EOZDboW8GpZ53wZiNUgJnnzMogE-WsEhwDkCxfGNbr6iYehkaEw==',
+          username: process.env.KAFKA_USERNAME,
+          password: process.env.KAFKA_PASSWORD,
         },
         ssl: true,
       })
