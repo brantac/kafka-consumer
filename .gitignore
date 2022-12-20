@@ -2,3 +2,6 @@ node_modules
 
 # Yarn files
 yarn.lock
+
+# ENV FILES
+.env
